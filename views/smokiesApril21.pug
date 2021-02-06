@@ -1,6 +1,7 @@
 extends layout
 
 block content
+
     h1 Long weekend in the Great Smoky Mountains NP
     h3 April 22-25
 
@@ -15,6 +16,12 @@ block content
 
     h2 Route
     a(href='https://caltopo.com/m/DA6F' target='_blank') Mapped on Caltopo
+    br
+    
+    #map
+    //- #satMap
+    //- #topoMap
+
     .day Day 1
     p.
         5.0 mi - 2,500’ up
@@ -71,3 +78,6 @@ block content
     //- lighterpack with custom id
     script(src="https://lighterpack.com/e/jul15j")
     #jul15j
+   
+   
+    script(src='javascripts/smokiesMap.js')
