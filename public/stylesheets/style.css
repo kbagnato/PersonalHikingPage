@@ -1,0 +1,25 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #88e7f7;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#footer {
+  /* padding-top: 2%; */
+  /* text-align: center; */
+}
+
+#mapid {
+	min-width: 400px;
+	min-height: 600px;
+	height: 70%;
+	width: 100%;
+}
+
+.day {
+  font-style: italic;
+}

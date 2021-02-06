@@ -1,0 +1,46 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    
+    //- //- custom js
+    //- script(src="javascripts/map.js")
+  
+    //- bootstrap
+    link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous")
+
+    //- jQuery
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+    
+    //- mapbox
+    script(src='https://api.mapbox.com/mapbox-gl-js/v2.1.0/mapbox-gl.js')
+    link(href='https://api.mapbox.com/mapbox-gl-js/v2.1.0/mapbox-gl.css' rel='stylesheet')
+
+
+  body
+    //- header
+    h1 Kevin's Hiking Page
+    
+    block navbar
+      navbar
+      ul.nav.nav-tabs
+        li.nav-item 
+          a.nav-link(href='/') Home
+        li.nav-item 
+          a.nav-link(href='/smokiesApril21') Smokies April '21
+        li.nav-item 
+          a.nav-link(href='/aboutWebsite') About this page
+        //- dropdown menu is not working 
+        //- li.nav-item.dropdown
+        //-   a.nav-link.dropdown-toggle#navbarDropdown(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false') Great Smoky Mountains
+        //-   .dropdown-menu(aria-labelledby='navbarDropdown')
+        //-     a.dropdown-item(href='#') April 2021
+        //-     a.dropdown-item(href='#') June 2019
+
+    block content
+
+    block footer
+      #footer
+        hr
+        p Kevin Bagnato 2021
