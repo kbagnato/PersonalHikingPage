@@ -6,8 +6,12 @@ var map = new mapboxgl.Map({
     zoom: 12 // starting zoom
 });
 
-map.on('load'), function () {
-    var url = 'public/tracks/Smokies (1).json'
+// // add markers to map
+// map.on('load') 
+
+// attempt to add gpx track
+map.on('load', function () {
+    var url = 'tracks/Smokies.json'
     map.addSource('route', { type: 'geojson', data: url });
 
     map.addLayer({
@@ -23,9 +27,7 @@ map.on('load'), function () {
             'line-width': 8
         }
     });
-};
-
-// }
+});
 
 
 // trying to swap between topo and sat maps
