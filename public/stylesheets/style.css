@@ -8,13 +8,9 @@ a {
   color: #00B7FF;
 }
 
-#footer {
-  /* padding-top: 2%; */
-  /* text-align: center; */
-}
 
-#mapid {
-	min-width: 400px;
+#map {
+  min-width: 400px;
 	min-height: 600px;
 	height: 70%;
 	width: 100%;
