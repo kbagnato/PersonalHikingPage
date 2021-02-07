@@ -10,18 +10,16 @@ var map = new mapboxgl.Map({
     bearing: 120
 });
 
+// rotate camera around center point
 function rotateCamera(timestamp) {
-    // clamp the rotation between 0 -360 degrees
-    // Divide timestamp by 100 to slow rotation to ~10 degrees / sec
-    map.rotateTo(180 + -1*(timestamp / 100) % 360, { duration: 0 });
-    // Request the next frame of the animation.
+    map.rotateTo(180 + -1 * (timestamp / 100) % 360, { duration: 0 });
     requestAnimationFrame(rotateCamera);
 }
 
+
 map.on('load', function () {
     rotateCamera(0);
-    
-    
+
     // make map 3d
     map.addSource('mapbox-dem', {
         'type': 'raster-dem',
