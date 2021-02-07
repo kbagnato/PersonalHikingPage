@@ -1,7 +1,10 @@
 // init mapbox on page
 mapboxgl.accessToken = 'pk.eyJ1IjoiYmFnYWRvbnV0cyIsImEiOiJja2tzbnVyMDMwbnIyMnhxbWVxdnRoc3Z1In0.IXWNtJpEBnXTXDyKVVRC5w';
-var cameraMoving = true;
 
+// boolean for camera auto pilot
+var cameraMoving = false;
+
+// define map on page
 var map = new mapboxgl.Map({
     container: 'map',
     // style: 'mapbox://styles/mapbox/outdoors-v11', // stylesheet location
@@ -20,8 +23,14 @@ function rotateCamera(timestamp) {
     }
 }
 
+// stop camera movement when clicked
+$('#stop').click(function() {
+    cameraMoving = false;
+});
 
+// add map features when loaded
 map.on('load', function () {
+    // begin camera autopilot
     rotateCamera(0);
 
     // make map 3d
