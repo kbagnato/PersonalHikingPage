@@ -5,12 +5,23 @@ var map = new mapboxgl.Map({
     // style: 'mapbox://styles/mapbox/outdoors-v11', // stylesheet location
     style: 'mapbox://styles/mapbox-map-design/ckhqrf2tz0dt119ny6azh975y',
     center: [-83.75, 35.57],
-    zoom: 12.4,
-    pitch: 85,
-    bearing:120
+    zoom: 12.6,
+    pitch: 75,
+    bearing: 120
 });
 
+function rotateCamera(timestamp) {
+    // clamp the rotation between 0 -360 degrees
+    // Divide timestamp by 100 to slow rotation to ~10 degrees / sec
+    map.rotateTo(180 + -1*(timestamp / 100) % 360, { duration: 0 });
+    // Request the next frame of the animation.
+    requestAnimationFrame(rotateCamera);
+}
+
 map.on('load', function () {
+    rotateCamera(0);
+    
+    
     // make map 3d
     map.addSource('mapbox-dem', {
         'type': 'raster-dem',
