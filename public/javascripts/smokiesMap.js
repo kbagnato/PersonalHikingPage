@@ -9,13 +9,13 @@ var map = new mapboxgl.Map({
 
 // add hiking track to map
 map.on('load', function () {
-    // add geojson trail
+    // add geojson trail to source
     var url = 'tracks/Smokies.json'
     map.addSource('route', { type: 'geojson', data: url });
 
-    // customize trail line
+    // add trail
     map.addLayer({
-        'id': 'route',
+        'id': 'trail',
         'type': 'line',
         'source': 'route',
         'layout': {
@@ -28,10 +28,17 @@ map.on('load', function () {
         }
     });
 
-    // add water sources
-    map.marker
-
-    // add campsites
+    // add markers
+    map.addLayer({
+        'id': 'campsites',
+        'type': 'circle',
+        'source': 'route',
+        'paint': {
+            'circle-radius': 6,
+            'circle-color': '#B42222'
+        },
+        'filter': ['==', '$type', 'Point']
+    });
 });
 
 
