@@ -2,14 +2,37 @@
 mapboxgl.accessToken = 'pk.eyJ1IjoiYmFnYWRvbnV0cyIsImEiOiJja2tzbnVyMDMwbnIyMnhxbWVxdnRoc3Z1In0.IXWNtJpEBnXTXDyKVVRC5w';
 var map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/mapbox/outdoors-v11', // stylesheet location
-    center: [-83.75, 35.57], // starting position [lng, lat]
-    zoom: 12 // starting zoom
+    // style: 'mapbox://styles/mapbox/outdoors-v11', // stylesheet location
+    center: [-83.75, 35.57],
+    zoom: 12,
+    pitch: 85,
+    bearing: 80,
+    style: 'mapbox://styles/mapbox-map-design/ckhqrf2tz0dt119ny6azh975y'
 });
 
-// add hiking track to map
 map.on('load', function () {
-    // add geojson trail to source
+    // make map 3d
+    map.addSource('mapbox-dem', {
+        'type': 'raster-dem',
+        'url': 'mapbox://mapbox.mapbox-terrain-dem-v1',
+        'tileSize': 512,
+        'maxzoom': 14
+    });
+    // add the DEM source as a terrain layer with exaggerated height
+    map.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 1.5 });
+
+    // add a sky layer that will show when the map is highly pitched
+    map.addLayer({
+        'id': 'sky',
+        'type': 'sky',
+        'paint': {
+            'sky-type': 'atmosphere',
+            'sky-atmosphere-sun': [0.0, 0.0],
+            'sky-atmosphere-sun-intensity': 15
+        }
+    });
+
+    // add external geojson (from caltopo) to source
     var url = 'tracks/Smokies.json'
     map.addSource('route', { type: 'geojson', data: url });
 
