@@ -1,5 +1,7 @@
 // init mapbox on page
 mapboxgl.accessToken = 'pk.eyJ1IjoiYmFnYWRvbnV0cyIsImEiOiJja2tzbnVyMDMwbnIyMnhxbWVxdnRoc3Z1In0.IXWNtJpEBnXTXDyKVVRC5w';
+var cameraMoving = true;
+
 var map = new mapboxgl.Map({
     container: 'map',
     // style: 'mapbox://styles/mapbox/outdoors-v11', // stylesheet location
@@ -12,8 +14,10 @@ var map = new mapboxgl.Map({
 
 // rotate camera around center point
 function rotateCamera(timestamp) {
-    map.rotateTo(180 + -1 * (timestamp / 100) % 360, { duration: 0 });
-    requestAnimationFrame(rotateCamera);
+    if (cameraMoving) {
+        map.rotateTo(180 + -1 * (timestamp / 100) % 360, { duration: 0 });
+        requestAnimationFrame(rotateCamera);
+    }
 }
 
 
