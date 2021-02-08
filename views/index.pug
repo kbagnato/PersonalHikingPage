@@ -10,8 +10,39 @@ block content
     li Blog about past hikes 
     li Show the gear I've made
 
-
   img.img-fluid(src="images/Smokies.jpg" alt="Great Smokey Mountains NP" width=800)
   img.img-fluid(src="images/tarp.jpg" alt="Homemade tarp" width=800)
+  
+  br
+  br
+
+  h2 Some notable hikes
+  table.table.table-striped.table-hover
+    thead
+      tr 
+        th Location
+        th Miles
+        th Nights
+
+    //- this will become dynamic based off postgres data.
+      maybe attach custom ids, add click for map.flyTo() 
+    tbdoy
+      tr 
+        td Great Smoky Mountains NP - Charlie's Bunion
+        td 31
+        td 2
+      tr 
+        td Shenandoah NP - Moormans River and Wildcat Hollow
+        td 22
+        td 2
+      tr 
+        td Catskills - Giant Ledge, Wittenberg, Cornell, Slide
+        td 
+        td 2
+      tr 
+        td White Mountains NF 
+        td 12 - Liberty and Flume
+        td 1
+
 
   #map
