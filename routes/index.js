@@ -19,8 +19,8 @@ router.get('/astro', function(req, res, next) {
 });
 
 /* GET About website page. */
-router.get('/aboutWebsite', function(req, res, next) {
-  res.render('aboutWebsite', { title: TITLE });
+router.get('/about', function(req, res, next) {
+  res.render('about', { title: TITLE });
 });
 
 module.exports = router;
