@@ -4,12 +4,37 @@ block content
     p All photos are my own.
     br
 
+    //- .modal.fade#exampleModal(tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true")
+    //-     .modal-dialog(role="document")
+    //-         .modal-content
+    //-             .modal-header
+    //-             h5.modal-title#exampleModalLabel Modal title
+    //-             button(type="button" class="close" data-dismiss="modal" aria-label="Close")
+    //-                 span (aria-hidden="true")&times;
+    //-         .modal-body poop
+    //-         .modal-footer
+    //-             button.btn.btn-secondary(type="button" data-dismiss="modal") Close
+    //-             button.btn.btn-primary(type="button") Save changes
     .row 
         .col-md-4 
             .thumbnail 
-                img.img-fluid(src="images/astro/LakeTekapo.jpg" alt="Homemade tarp" width=800)
-                .caption The Church of the Good Shephard, Lake Tekapo, New Zealand
+                img.img.img-fluid(src="images/astro/LakeTekapo.jpg" alt="Homemade tarp" width='100%')
+                .caption The Church of the Good Shephard, Lake Tekapo, New Zealand.
         .col-md-4 
             .thumbnail 
-                img.img-fluid(src="images/astro/SouthernLights.jpg" alt="Homemade tarp" width=800)
-                .caption The Southern Lights shot from Kina Beach, New Zealand
+                input.img.img-fluid(type='image' src='images/astro/SouthernLights.jpg' data-toggle="modal" data-target="#exampleModal")
+                .caption The Southern Lights shot from Kina Beach, New Zealand.
+        .col-md-4 
+            .thumbnail 
+                input.img.img-fluid(type='image' src='images/astro/DrunkMate.jpg' data-toggle="modal" data-target="#exampleModal")
+                .caption Drunk mate I met on the shore.
+    .row
+        .col-md-4 
+            .thumbnail 
+                input.img.img-fluid(type='image' src='images/astro/Catskills campground.jpg' data-toggle="modal" data-target="#exampleModal")
+                .caption North South Lake Campground, Catskills, New York.
+
+    
+    
+    
+    
