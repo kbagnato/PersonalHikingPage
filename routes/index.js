@@ -8,7 +8,12 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: TITLE});
 });
 
-/* GET Smokies Apeil 21 page. */
+/* GET gear page. */
+router.get('/gear', function(req, res, next) {
+  res.render('gear', { title: TITLE });
+});
+
+/* GET Smokies April 21 page. */
 router.get('/smokiesApril21', function(req, res, next) {
   res.render('smokiesApril21', { title: TITLE });
 });
