@@ -1,14 +1,14 @@
 [
     {
-        "name": "windshirt",
-        "fabric": "hyperd"
+        "name": "Windshirt",
+        "materials": ["1.0oz HyperD", "Velcro"]
     },
     {
-        "name": "flat tarp",
-        "fabric": "1.1oz silpoly"
+        "name": "Flat Tarp 7'x9'",
+        "materials": ["1.1oz silpoly"]
     },
     {
-        "name": "bug tent",
-        "fabric": "1.1oz silpoly"
+        "name": "Bug Tent",
+        "materials": ["1.1oz silpoly", "0.67oz noseeum mesh"]
     }
 ]

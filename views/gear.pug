@@ -14,3 +14,10 @@ block content
         li Stuff sacks
         li Bottle and pot insulators 
         li Bicycle frame bag
+
+    each item in gear
+        h1 #{item.name}
+        p Materials: 
+        ul
+            each mat in item.materials
+                li #{mat}
