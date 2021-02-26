@@ -32,7 +32,7 @@
         "name": "Mountain Flyer",
 		"desc" : "Pattern from Bag Buff",
         "materials": ["Joann's ripstop nylon", "Laundry bag mesh"],
-		"pictures": ["bivyDay", "bivyNight"]
+		"pictures": ["mtnFlyer"]
     },
     {
         "name": "Bike Bag",
