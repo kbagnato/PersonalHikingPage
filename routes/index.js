@@ -1,3 +1,4 @@
+const fs = require('fs')
 var express = require('express');
 var router = express.Router();
 
@@ -10,7 +11,9 @@ router.get('/', function(req, res, next) {
 
 /* GET gear page. */
 router.get('/gear', function(req, res, next) {
-  res.render('gear', { title: TITLE });
+  let gearFile = fs.readFileSync('public/gearList.json');
+  let gearList = JSON.parse(gearFile);
+  res.render('gear', { title: TITLE, gear: gearList });
 });
 
 /* GET Smokies April 21 page. */
