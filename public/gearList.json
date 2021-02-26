@@ -1,0 +1,13 @@
+{
+    "gearList": [
+        {"name": "windshirt",
+            "fabric": "hyperd"
+        },
+        {"name": "flat tarp",
+            "fabric": "1.1oz silpoly"
+        },
+        {"name": "bug tent",
+            "fabric": "1.1oz silpoly"
+        }
+    ]
+}
