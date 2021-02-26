@@ -11,8 +11,8 @@ router.get('/', function(req, res, next) {
 
 /* GET gear page. */
 router.get('/gear', function(req, res, next) {
-  let gearFile = fs.readFileSync('public/gearList.json');
-  let gearList = JSON.parse(gearFile);
+  var gearFile = fs.readFileSync('public/gearList.json');
+  var gearList = JSON.parse(gearFile);
   res.render('gear', { title: TITLE, gear: gearList });
 });
 
