@@ -8,7 +8,8 @@
         "materials": ["1.1oz silpoly"]
     },
     {
-        "name": "Bug Tent",
-        "materials": ["1.1oz silpoly", "0.67oz noseeum mesh"]
+        "name": "Net Tent",
+        "materials": ["1.1oz silpoly", "0.67oz noseeum mesh"],
+		"pictures": ["netTentLake", "netTentDirt"]
     }
 ]
