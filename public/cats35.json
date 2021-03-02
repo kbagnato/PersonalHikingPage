@@ -7,27 +7,27 @@
     {
         "name" : "Hunter",
         "elevation": "4030",
-        "hiked": false
+        "hiked": true
     },
     {
         "name" : "Black Dome",
         "elevation": "3994",
-        "hiked": false
+        "hiked": true
     },
     {
         "name" : "Thomas Cole",
         "elevation": "3953",
-        "hiked": false
+        "hiked": true
     },
     {
         "name" : "Blackhead",
         "elevation": "3940",
-        "hiked": false
+        "hiked": true
     },
     {
         "name" : "West Kill",
         "elevation": "3898",
-        "hiked": false
+        "hiked": true
     },
     {
         "name" : "Doubletop",
@@ -42,37 +42,37 @@
     {
         "name" : "Cornell",
         "elevation": "3857",
-        "hiked": false
+        "hiked": true
     },
     {
         "name" : "Plateau",
         "elevation": "3835",
-        "hiked": false
+        "hiked": true
     },
     {
         "name" : "Table",
         "elevation": "3825",
-        "hiked": false
+        "hiked": true
     },
     {
         "name" : "Peekamoose",
         "elevation": "3819",
-        "hiked": false
+        "hiked": true
     },
     {
         "name" : "Sugarloaf",
         "elevation": "3783",
-        "hiked": false
+        "hiked": true
     },
     {
         "name" : "Wittenberg",
         "elevation": "3782",
-        "hiked": false
+        "hiked": true
     },
     {
         "name" : "Southwest Hunter",
         "elevation": "3753",
-        "hiked": false
+        "hiked": true
     },
     {
         "name" : "Balsam Lake",
@@ -82,12 +82,12 @@
     {
         "name" : "Panther",
         "elevation": "3724",
-        "hiked": false
+        "hiked": true
     },
     {
         "name" : "Lone",
         "elevation": "3700",
-        "hiked": false
+        "hiked": true
     },
     {
         "name" : "Big Indian",
@@ -97,7 +97,7 @@
     {
         "name" : "Friday",
         "elevation": "3692",
-        "hiked": false
+        "hiked": true
     },
     {
         "name" : "Rusk",
@@ -107,12 +107,12 @@
     {
         "name" : "Kaaterskill High Peak",
         "elevation": "3652",
-        "hiked": false
+        "hiked": true
     },
     {
         "name" : "Twin",
         "elevation": "3650",
-        "hiked": false
+        "hiked": true
     },
     {
         "name" : "Fir",
@@ -127,7 +127,7 @@
     {
         "name" : "Balsam",
         "elevation": "3607",
-        "hiked": false
+        "hiked": true
     },
     {
         "name" : "North Dome",
@@ -147,7 +147,7 @@
     {
         "name" : "Indian Head",
         "elevation": "3573",
-        "hiked": false
+        "hiked": true
     },
     {
         "name" : "Sherrill",
@@ -162,7 +162,7 @@
     {
         "name" : "Windham High Peak",
         "elevation": "3525",
-        "hiked": false
+        "hiked": true
     },
     {
         "name" : "Halcott",
@@ -172,6 +172,6 @@
     {
         "name" : "Rocky",
         "elevation": "3487",
-        "hiked": false
+        "hiked": true
     }
 ]
