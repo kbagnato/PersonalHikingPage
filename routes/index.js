@@ -16,6 +16,13 @@ router.get('/gear', function(req, res, next) {
   res.render('gear', { title: TITLE, gear: gearList });
 });
 
+/* GET cats 35 attempt page. */
+router.get('/cats35', function(req, res, next) {
+  var catsFile = fs.readFileSync('public/cats35.json');
+  var catsList = JSON.parse(catsFile);
+  res.render('cats35', { title: TITLE, peakList: catsList });
+});
+
 /* GET Smokies April 21 page. */
 router.get('/smokiesApril21', function(req, res, next) {
   res.render('smokiesApril21', { title: TITLE });
