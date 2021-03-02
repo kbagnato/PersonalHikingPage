@@ -12,7 +12,7 @@ block content
     h2 #{numHiked} / 35 high peaks sumitted so far.
     p Here's a list of the Catskills 3500 high peaks that I've hiked so far. I'm working on hiking all of them to join the <a href="http://catskill-3500-club.org/" target="_blank">Catskills 3500 Club</a>. 
 
-    table.table.table-striped
+    table.table.table-striped.table-hover
         tr
             th Mountain 
             th Elevation (feet)
@@ -22,7 +22,7 @@ block content
                 td #{peak.name}
                 td #{peak.elevation}
                 - if (peak.hiked == true)
-                    td Yeah! 
+                    td.text-success Yeah! 
                 - else
-                    td Not yet
+                    td.text-danger Not yet
     
