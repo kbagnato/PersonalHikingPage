@@ -19,6 +19,29 @@ function initMapbox() {
         // pitch: 75,
         // bearing: 120
     });
+
+    map.on('style.load', addTracks);
+}
+
+function addTracks() {
+    // add external geojson (from caltopo) to source
+    var url = 'tracks/catskills/WCS.json'
+    map.addSource('route', { type: 'geojson', data: url });
+
+    // add trail
+    map.addLayer({
+        'id': 'trail',
+        'type': 'line',
+        'source': 'route',
+        'layout': {
+            'line-join': 'round',
+            'line-cap': 'round'
+        },
+        'paint': {
+            'line-color': '#543ff2',
+            'line-width': 4
+        }
+    });
 }
 
 function updateInfo() {
