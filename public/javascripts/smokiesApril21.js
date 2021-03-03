@@ -13,10 +13,10 @@ function initMapbox() {
         container: 'map',
         // style: 'mapbox://styles/mapbox/outdoors-v11', // stylesheet location
         style: 'mapbox://styles/mapbox-map-design/ckhqrf2tz0dt119ny6azh975y',
-        center: [-83.75, 35.57],
-        zoom: 12.6,
-        pitch: 75,
-        bearing: 120
+        center: [-83.75, 35.58],
+        zoom: 12.5,
+        pitch: 61,
+        bearing: 118
     });
 
     // add map features when loaded
@@ -80,14 +80,14 @@ function addTracks() {
 
 function updateInfo() {
     var center = map.getCenter();
-    $('.center').text("Center: " + center);
+    $('#center').text("Center: " + center);
 
     var zoom = map.getZoom();
-    $('.zoom').text("Zoom: " + zoom);
+    $('#zoom').text("Zoom: " + zoom);
 
-    // var pitch = map.getPitch();
-    // $('.pitch').text("Pitch: " + pitch);
+    var pitch = map.getPitch();
+    $('#pitch').text("Pitch: " + pitch);
 
-    // var bearing = map.getBearing();
-    // $('.bearing').text("Bearing: " + bearing);
+    var bearing = map.getBearing();
+    $('#bearing').text("Bearing: " + bearing);
 }
