@@ -18,9 +18,14 @@ router.get('/gear', function(req, res, next) {
 
 /* GET cats 35 attempt page. */
 router.get('/cats35', function(req, res, next) {
+  // include list of high peaks
   var catsFile = fs.readFileSync('public/cats35.json');
   var catsList = JSON.parse(catsFile);
-  res.render('cats35', { title: TITLE, peakList: catsList });
+  
+  // include list of tracks to pug = how do I get it to cats35.js?
+  var tracks = fs.readdirSync('public/tracks/catskills')
+  
+  res.render('cats35', { title: TITLE, peakList: catsList, hikes: tracks });
 });
 
 /* GET Smokies April 21 page. */

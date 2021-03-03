@@ -24,7 +24,7 @@ function initMapbox() {
 }
 
 function addTracks() {
-    // add external geojson (from caltopo) to source
+    // add external geojson (from caltopo) to map
     var url = 'tracks/catskills/WCS.json'
     map.addSource('route', { type: 'geojson', data: url });
 
