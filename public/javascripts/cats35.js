@@ -46,8 +46,8 @@ function addTracks() {
 
 function updateInfo() {
     var center = map.getCenter();
-    $('.center').text("Center: " + center);
+    $('#center').text("Center: " + center);
 
     var zoom = map.getZoom();
-    $('.zoom').text("Zoom: " + zoom);
+    $('#zoom').text("Zoom: " + zoom);
 }
