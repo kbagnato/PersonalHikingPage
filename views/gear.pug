@@ -17,6 +17,7 @@ block content
 
     //- list each item in db
     each item in gear
+        hr
         h1 #{item.name}
 
         //- render pictures if included
@@ -25,7 +26,7 @@ block content
                 .row 
                     .col-md-4 
                         .thumbnail 
-                            img.img.img-fluid(src=`images/gear/${pic}.jpg` width='100%')
+                            img.img.img-fluid(src=`/images/gear/${pic}.jpg` width='100%')
                             br
                             br
         

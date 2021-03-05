@@ -1,15 +1,43 @@
 [
     {
         "name": "Windshirt",
+		"desc": "Green Pepper pattern 134",
         "materials": ["1.0oz HyperD", "Velcro"]
     },
     {
         "name": "Flat Tarp 7'x9'",
-        "materials": ["1.1oz silpoly"]
+		"desc" : "",
+        "materials": ["1.1oz silpoly", "Zing-it"],
+		"pictures": ["tarp"]
     },
     {
         "name": "Net Tent",
-        "materials": ["1.1oz silpoly", "0.67oz noseeum mesh"],
+        "desc" : "Fully enclosed; Waterproof 4\" bathtub floor; Center and size zips",
+		"materials": ["1.1oz silpoly", "0.67oz noseeum mesh"],
 		"pictures": ["netTentLake", "netTentDirt"]
+    },
+    {
+        "name": "Bug Bivy",
+		"desc" : "Waterproof floor; chest to side zip",
+        "materials": ["1.6oz silpoly", "0.67oz noseeum mesh"],
+		"pictures": ["bivyDay", "bivyNight"]
+    },
+    {
+        "name": "RayWay backpack",
+		"desc" : "Kit from Ray Jardine",
+        "materials": ["Not specified"],
+		"pictures": ["rayway", "raywaySide"]
+    },
+    {
+        "name": "Mountain Flyer",
+		"desc" : "Pattern from Bag Buff",
+        "materials": ["Joann's ripstop nylon", "Laundry bag mesh"],
+		"pictures": ["mtnFlyer"]
+    },
+    {
+        "name": "Bike Bag",
+		"desc" : "Frame bag",
+        "materials": ["1.6oz silpoly", "Shoelaces"],
+		"pictures": ["bikeBag"]
     }
 ]
