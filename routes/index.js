@@ -9,6 +9,12 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: TITLE});
 });
 
+
+/* GET resume. */
+router.get('/resume', function(req, res, next) {
+	res.render('resume', { title: TITLE});
+  });
+
 /* GET gear page. */
 router.get('/gear', function(req, res, next) {
   var gearFile = fs.readFileSync('public/gearList.json');
