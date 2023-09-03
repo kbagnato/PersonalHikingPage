@@ -9,10 +9,10 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: TITLE});
 });
 
-
 /* GET resume. */
-router.get('/resume', function(req, res, next) {
-	res.render('resume', { title: TITLE});
+router.get('/resume', function(req, res) {
+	let filename = "/KevinBagnatoResume sept 2023.pdf";
+	res.sendFile(__dirname + '//' + filename);
   });
 
 /* GET gear page. */
