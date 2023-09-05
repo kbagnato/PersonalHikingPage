@@ -2,7 +2,7 @@ const fs = require('fs')
 var express = require('express');
 var router = express.Router();
 
-const TITLE = "Bagadonuts Hiking"
+const TITLE = "Nature Disrupted"
 
 /* GET home page. */
 router.get('/', function(req, res, next) {

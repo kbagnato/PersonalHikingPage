@@ -1,9 +1,7 @@
-# PersonalHikingPage
-~~https://bagadonuts.herokuapp.com/~~
+# Nautre Disrupted
+~~https://naturedisrupted.com/~~
 
-This is an old project that has lost its online deployment capability.
-
-New live site coming soon.
+This site is devoted to my backcountry adventures.
 
 ---
-Last updated 9/3/2023.
+Last updated 9/4/2023.
