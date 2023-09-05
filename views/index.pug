@@ -1,7 +1,7 @@
 extends layout
 
 block content
-  script(src='javascripts/map.js')
+  link(rel='stylesheet', href='/stylesheets/slideshow.css')
 
   //-
     p This is a place built by Kevin to:
@@ -14,10 +14,35 @@ block content
     img.img-fluid(src="images/Smokies.jpg" alt="Great Smokey Mountains NP" width=800)
     img.img-fluid(src="images/tarp.jpg" alt="Homemade tarp" width=800)
   
-  //- TODO add carosoul
-    https://www.w3schools.com/howto/howto_js_slideshow.asp
-  div(classname='carousel')
-    img(src="/images/Aoraki.jpg", alt="Aoraki, NZ", id="carousel-0")
+  //- TODO implement dynamic handling
+  //- - var banners = [
+  //-   {'filename':'Aoraki.jpg', 'caption':'Aoraki NP, New Zealand'}
+  //- ]
+  div.slideshow-container
+    div.slide
+      img(src="/images/Aoraki.jpg", style='width:100%')
+      div.banner-caption Aoraki NP, New Zealand
+    
+    div.slide
+      img(src="/images/Smokies.jpg", style='width:100%')
+      div.banner-caption Great Smoky Mountains NP, Tennessee
+    
+    div.slide
+      img(src="/images/Windham.jpg", style='width:100%')
+      div.banner-caption Catskills Park, New York
+
+    a.prev(onclick='plusSlides(-1)') &#10094;
+    a.next(onclick='plusSlides(1)') &#10095;
+  div(style='text-align:center')
+    span.dot(onclick='currentSlide(1)')
+    span.dot(onclick='currentSlide(2)')
+    span.dot(onclick='currentSlide(3)')
+
+    //- each banner in banners
+    //-   div(classname='slide fade')
+    //-   img(src=banner.filename, alt=caption, style='width:100%')
+    //-   div(classname='text')= banner.caption
+
 
   br
   br
@@ -60,3 +85,4 @@ block content
 
 
   #multiMap
+  script(src='javascripts/slideshow.js')

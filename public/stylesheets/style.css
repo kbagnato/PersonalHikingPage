@@ -4,18 +4,6 @@ body {
   background-color: #88e7f7;
 }
 
-/* .banner {
-  position: absolute; 
-  top: 0; 
-  left: 0; 
-  width: 100%;
-} */
-
-#banner-pic {
-  width: 100%; 
-  max-height: 264px;
-}
-
 a {
   color: #00B7FF;
 }
