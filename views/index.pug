@@ -3,15 +3,22 @@ extends layout
 block content
   script(src='javascripts/map.js')
 
-  p This is a place built by Kevin to:
-  ul 
-    li Practice web skills from server development to app deployment
-    li Share plans for upcoming trips
-    li Show the gear I've made
+  //-
+    p This is a place built by Kevin to:
+    ul 
+      li Practice web skills from server development to app deployment
+      li Share plans for upcoming trips
+      li Show the gear I've made
 
-  img.img-fluid(src="images/Smokies.jpg" alt="Great Smokey Mountains NP" width=800)
-  img.img-fluid(src="images/tarp.jpg" alt="Homemade tarp" width=800)
+
+    img.img-fluid(src="images/Smokies.jpg" alt="Great Smokey Mountains NP" width=800)
+    img.img-fluid(src="images/tarp.jpg" alt="Homemade tarp" width=800)
   
+  //- TODO add carosoul
+    https://www.w3schools.com/howto/howto_js_slideshow.asp
+  div(classname='carousel')
+    img(src="/images/Aoraki.jpg", alt="Aoraki, NZ", id="carousel-0")
+
   br
   br
 
