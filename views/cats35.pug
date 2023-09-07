@@ -19,25 +19,26 @@ block content
   //- #center Center: 
   //- #zoom Zoom:
   
+  .flex-container
+      .cats-flex-child
+        #map.map
+        p Above is an incomplete map of the trails I've hiked in the Catskills Park. 
 
-  //- TODO make columns
-  #map.map
-  p Above is an incomplete map of the trails I've hiked in the Catskills Park. 
 
-
-  table.table.table-striped.table-sm.table-hover#highPeaksTable
-      thead
-          tr
-              th Mountain 
-              th Elevation (feet)
-              th Hiked
-      tbody
-          each peak in peakList 
-              tr
-                  td #{peak.name}
-                  td #{peak.elevation}
-                  - if (peak.hiked == true)
-                      td.text-success Yeah! 
-                  - else
-                      td.text-danger Not yet
+      .cats-flex-child
+          table.table.table-striped.table-sm.table-hover#highPeaksTable
+              thead
+                  tr
+                      th Mountain 
+                      th Elevation (feet)
+                      th Hiked
+              tbody
+                  each peak in peakList 
+                      tr
+                          td #{peak.name}
+                          td #{peak.elevation}
+                          - if (peak.hiked == true)
+                              td.text-success Yeah! 
+                          - else
+                                td.text-danger Not yet
       
