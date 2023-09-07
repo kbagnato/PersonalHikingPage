@@ -38,6 +38,6 @@
         "name": "Bike Bag",
 		"desc" : "Frame bag",
         "materials": ["1.6oz silpoly", "Shoelaces"],
-		"pictures": ["bikeBag"]
+		"pictures": ["bikeBag", "bikeBag2"]
     }
 ]
