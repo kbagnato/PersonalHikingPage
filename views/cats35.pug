@@ -1,40 +1,43 @@
 extends layout
 block content
 
-    script(src='javascripts/cats35.js')
+  script(src='javascripts/cats35.js')
 
-    //- make list of files available to js
-    //- - var hikes[] = ${tracks}
+  //- make list of files available to js
+  //- - var hikes[] = ${tracks}
 
-    -
-        // tally peaks hiked
-        var peaksHiked = 0
-        for (const peak of peakList) {
-           if (peak.hiked)
-                peaksHiked += 1
-        }
-    
-    h2 #{peaksHiked} / 35 high peaks sumitted so far.
-    p Here's a list of the Catskills 3500 high peaks that I've hiked so far. I'm working on hiking all of them to join the <a href="http://catskill-3500-club.org/" target="_blank">Catskills 3500 Club</a>. 
-    //- #center Center: 
-    //- #zoom Zoom:
-    #map.map
-    p Above is an incomplete map of the trails I've hiked in the Catskills Park. 
+  -
+      // tally peaks hiked
+      var peaksHiked = 0
+      for (const peak of peakList) {
+          if (peak.hiked)
+              peaksHiked += 1
+      }
+  
+  h2 #{peaksHiked} / 35 high peaks sumitted so far.
+  p Here's a list of the Catskills 3500 high peaks that I've hiked so far. I'm working on hiking all of them to join the <a href="http://catskill-3500-club.org/" target="_blank">Catskills 3500 Club</a>. 
+  //- #center Center: 
+  //- #zoom Zoom:
+  
+
+  //- TODO make columns
+  #map.map
+  p Above is an incomplete map of the trails I've hiked in the Catskills Park. 
 
 
-    table.table.table-striped.table-sm.table-hover#highPeaksTable
-        thead
-            tr
-                th Mountain 
-                th Elevation (feet)
-                th Hiked
-        tbody
-            each peak in peakList 
-                tr
-                    td #{peak.name}
-                    td #{peak.elevation}
-                    - if (peak.hiked == true)
-                        td.text-success Yeah! 
-                    - else
-                        td.text-danger Not yet
-        
+  table.table.table-striped.table-sm.table-hover#highPeaksTable
+      thead
+          tr
+              th Mountain 
+              th Elevation (feet)
+              th Hiked
+      tbody
+          each peak in peakList 
+              tr
+                  td #{peak.name}
+                  td #{peak.elevation}
+                  - if (peak.hiked == true)
+                      td.text-success Yeah! 
+                  - else
+                      td.text-danger Not yet
+      
