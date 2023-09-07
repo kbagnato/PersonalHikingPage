@@ -1,5 +1,5 @@
 # Nautre Disrupted
-~~https://naturedisrupted.com/~~
+https://naturedisrupted.com/
 
 This site is devoted to my backcountry adventures.
 
