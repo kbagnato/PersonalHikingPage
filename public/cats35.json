@@ -5,6 +5,11 @@
         "hiked": true
     },
     {
+        "name" : "Slide (winter ascent)",
+        "elevation": "4184",
+        "hiked": false
+    },
+    {
         "name" : "Hunter",
         "elevation": "4030",
         "hiked": true
@@ -23,6 +28,11 @@
         "name" : "Blackhead",
         "elevation": "3940",
         "hiked": true
+    },
+    {
+        "name" : "Blackhead (winter ascent)",
+        "elevation": "3940",
+        "hiked": false
     },
     {
         "name" : "West Kill",
@@ -85,6 +95,11 @@
         "hiked": true
     },
     {
+        "name" : "Panther (winter ascent)",
+        "elevation": "3724",
+        "hiked": false
+    },
+    {
         "name" : "Lone",
         "elevation": "3700",
         "hiked": true
@@ -128,6 +143,11 @@
         "name" : "Balsam",
         "elevation": "3607",
         "hiked": true
+    },
+    {
+        "name" : "Balsam (winter ascent)",
+        "elevation": "3607",
+        "hiked": false
     },
     {
         "name" : "North Dome",
