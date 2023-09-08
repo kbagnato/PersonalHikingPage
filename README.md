@@ -1,4 +1,4 @@
-# Nautre Disrupted
+# Nature Disrupted
 See it here: https://naturedisrupted.com/, which is a mask for https://kevins-hiking-147cc5114b61.herokuapp.com/
 
 This site is devoted to my backcountry adventures.
