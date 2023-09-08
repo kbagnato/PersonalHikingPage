@@ -1,19 +1,34 @@
 var map;
+var highPeaks;
+var catTracks;
 
 $('document').ready(function() {
-  getCatsPeaks();
-    initMapbox();
+  highPeaks = getCatPeaks();
+  catTracks = getCatTracks();
+  initMapbox();
 });
 
-function getCatsPeaks() {
-  let result;
-  
+/* get one file with all Catskill tracks */
+function getCatTracks() {  
   $.ajax({
-    url: '/api/CatsPeaks',
+    url: '/api/CatTracks',
     type: 'GET',
     success: function (data) {
-      result = data;
-      console.log(result);
+      return data;
+    },
+    error: function (error) {
+      console.log('Error: ' + error);
+    }
+  });
+}
+
+/* get Catskills High Peaks list */
+function getCatPeaks() {  
+  $.ajax({
+    url: '/api/CatPeaks',
+    type: 'GET',
+    success: function (data) {
+      return data;
     },
     error: function (error) {
       console.log('Error: ' + error);
@@ -37,12 +52,15 @@ function initMapbox() {
         // bearing: 120
     });
 
-    map.on('style.load', addTracks);
+  map.on('style.load', addTracks);
 }
 
 function addTracks() {
     // add external geojson (from caltopo) to map
     var url = 'tracks/catskills/WCS.json'
+    
+    let combinedRoutes = getCombinedRoutes();
+    
     map.addSource('route', { type: 'geojson', data: url });
 
     // add trail

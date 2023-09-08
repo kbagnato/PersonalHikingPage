@@ -3,6 +3,8 @@ var express = require('express');
 var router = express.Router();
 const path = require('path');
 
+const geojsonHelper = require('../server_helpers/geojsonHelper');
+
 const TITLE = "Nature Disrupted"
 
 /* GET home page. */
@@ -26,13 +28,16 @@ router.get('/gear', function(req, res, next) {
 /* GET cats 35 attempt page. */
 router.get('/cats35', function(req, res, next) {
   // include list of high peaks
+  // TODO move to proper db
   var catsFile = fs.readFileSync('public/cats35.json');
   var catsList = JSON.parse(catsFile);
   
-  // include list of tracks to pug = how do I get it to cats35.js?
-  var tracks = fs.readdirSync('public/tracks/catskills')
+  // deprecated - load page, then get client to ajax request combined tracks
+  // // prepare tracks to deliver from server to client
+  // var tracks = fs.readdirSync('public/tracks/catskills')
+  // var allTracks = geojsonHelper.combineCatTracks();
   
-  res.render('cats35', { title: TITLE, peakList: catsList, hikes: tracks });
+  res.render('cats35', { title: TITLE, peakList: catsList });
 });
 
 /* GET Smokies April 21 page. */
@@ -50,12 +55,19 @@ router.get('/about', function(req, res, next) {
   res.render('about', { title: TITLE });
 });
 
+
 // TODO move to api.js
 /* GET 3500 peak list */
-router.get('/api/CatsPeaks', function(req, res, next) {
+router.get('/api/CatPeaks', function(req, res, next) {
   let filepath = path.resolve('./public/cats35.json');
   let peaks = JSON.parse(fs.readFileSync(filepath, 'utf8'));
   res.json(peaks);
+});
+
+/* GET Catskills GeoJSON tracks */
+router.get('/api/CatTracks', function(req, res, next) {
+  let catTracks = geojsonHelper.combineGeoTracks(geojsonHelper.loadCatTracks());
+  res.json(catTracks);
 })
 
 module.exports = router;
