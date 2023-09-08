@@ -1,8 +1,25 @@
 var map;
 
 $('document').ready(function() {
+  getCatsPeaks();
     initMapbox();
 });
+
+function getCatsPeaks() {
+  let result;
+  
+  $.ajax({
+    url: '/api/CatsPeaks',
+    type: 'GET',
+    success: function (data) {
+      result = data;
+      console.log(result);
+    },
+    error: function (error) {
+      console.log('Error: ' + error);
+    }
+  });
+}
 
 function initMapbox() {
     

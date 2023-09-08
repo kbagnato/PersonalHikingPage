@@ -1,6 +1,7 @@
 const fs = require('fs')
 var express = require('express');
 var router = express.Router();
+const path = require('path');
 
 const TITLE = "Nature Disrupted"
 
@@ -48,5 +49,13 @@ router.get('/astro', function(req, res, next) {
 router.get('/about', function(req, res, next) {
   res.render('about', { title: TITLE });
 });
+
+// TODO move to api.js
+/* GET 3500 peak list */
+router.get('/api/CatsPeaks', function(req, res, next) {
+  let filepath = path.resolve('./public/cats35.json');
+  let peaks = JSON.parse(fs.readFileSync(filepath, 'utf8'));
+  res.json(peaks);
+})
 
 module.exports = router;
