@@ -5,6 +5,11 @@
 const fs = require('fs');
 const path = require('path');
 
+/* return json file from local dir */
+function loadJson(filepath) {
+  return JSON.parse(fs.readFileSync(path.resolve(filepath)), 'utf8');
+}
+
 /* load Catskill Tracks from local files */
 function loadCatTracks() {
   let trackFiles = [];
@@ -36,4 +41,4 @@ function combineGeoTracks(tracks) {
   return allTracks;
 }
 
-module.exports = { loadCatTracks, combineGeoTracks };
+module.exports = { loadJson, loadCatTracks, combineGeoTracks };
