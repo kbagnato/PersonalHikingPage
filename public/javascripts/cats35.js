@@ -44,9 +44,9 @@ function initMapbox() {
   // define map on page
   map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/mapbox/outdoors-v11', // stylesheet location
-    // style: 'mapbox://styles/mapbox-map-design/ckhqrf2tz0dt119ny6azh975y',
-    center: [-74.53, 42.08],
+    style: 'mapbox://styles/mapbox/outdoors-v11', // terrain
+    // style: 'mapbox://styles/mapbox-map-design/ckhqrf2tz0dt119ny6azh975y',  // satelite
+    center: [-74.35, 42.08],
     zoom: 9.17
     // pitch: 75,
     // bearing: 120
