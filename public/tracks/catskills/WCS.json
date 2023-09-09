@@ -3971,6 +3971,7 @@
                 "type": "LineString"
             },
             "id": "6106cf9a-3abb-495d-b48f-0702cbe62b38",
+            "type": "Feature",
             "properties": {
                 "stroke-opacity": 1,
                 "pattern": "solid",
