@@ -15,10 +15,11 @@ Last updated September 2023.
 # TODO
 *Client-side*
 - Add 'loading tracks...' to Cats35 map
-- Implement AJAX call to get one geojson of all cats 35 tracks combined
+- ~~Implement AJAX call to get one geojson of all cats 35 tracks combined~~
+- 
 - Make Bagadonuts Gear page emulate an online shopping site
   
 *Server-side*
-- Complete 'combineCatTracks() in geojsonHelper
-- Create API for sending geojson of combined Cats tracks
+- ~~Complete 'combineCatTracks() in geojsonHelper~~
+- ~~ Create API for sending geojson of combined Cats tracks ~~
 - Move local 'databases' to true db (Catskills peaks/tracks, Bagadonuts gear, images, etc)

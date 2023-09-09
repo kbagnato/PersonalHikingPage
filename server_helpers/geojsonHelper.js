@@ -19,6 +19,7 @@ function loadCatTracks() {
   return trackFiles;
 }
 
+/* combine given geojson files into one collection */
 function combineGeoTracks(tracks) { 
   let allTracks = {
     'type' : 'FeatureCollection',
