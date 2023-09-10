@@ -39,3 +39,13 @@ a {
   max-width: 1300px;
   margin: auto;
 }
+
+.gear-card {
+  width: 18rem;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.gear-card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

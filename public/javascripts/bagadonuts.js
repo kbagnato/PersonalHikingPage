@@ -24,7 +24,7 @@ function populateList(list) {
   let gearCard;
 
   for (idx in list) {
-    gearCard = `<div class='card' style='width: 18rem'>`;
+    gearCard = `<div class='card gear-card'>`;
     if (list[idx].pictures)
       gearCard += `<img class='card-img-top' src='/images/gear/${list[idx].pictures[0]}.jpg' alt="Image coming soon">`;
     else
@@ -32,7 +32,7 @@ function populateList(list) {
     gearCard += `
       <div class='card-body'>
           <h5 class='card-title'>${list[idx].name}</h5
-          <h6 class='card-subtitle.text-muted'>desc pending...</h6>
+          <h6 class='card-subtitle.text-muted'>${list[idx].desc}</h6>
         </div>
       </div>`;
     

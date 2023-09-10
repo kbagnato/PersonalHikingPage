@@ -16,10 +16,10 @@ block content
           select.form-control#inputFilter
             //- TODO move to db
             option All Products
-            option Tarps
-            option Net tents
+            option Shelters
+            option Bags
             option Clothes
-            option Bike Bags
+            option Misc
 
         .col
           label(for='inputSort') Sort by:
@@ -35,22 +35,17 @@ block content
     
     //- bagadonuts.js populates this after an ajax call
     .bagadonuts-cards.flex-container
-      //- TODO this will be populated dynamically by gear.js (ajax population and js filtering))
-      //- if (loading), 'loading'
-      //- if (gearlist.length = 0), 'nothing found'
-      //- for (item in gearlist from gear.js)
+    //- if (loading), 'loading'
+    //- if (gearlist.length = 0), 'nothing found'
+    //- for (item in gearlist from gear.js)
 
 
     p Not listed above:
     ul
-      li 1 other backpacks (BagBuff Mountain Flyers) 
-      li Shorts, pants, 2 jackets (RayWay, Green Pepper) 
-      li Mittens
-      li Another Flat tarp
-      li more Mesh tent with bathtub floor 
+      li Shorts, pants, 2 jackets (RayWay, Green Pepper)
       li Stuff sacks
       li Bottle and pot insulators
-      li down balaclava
+      li Puffy balaclava
 
     //- DEPRECATED by .bagadonuts-cards
     //- //- list each item in db

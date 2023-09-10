@@ -1,13 +1,36 @@
 [
   {
     "name": "Mountain Flyer",
-    "desc": "Pattern from Bag Buff",
+    "desc": "Hipbelted, padded pack (pattern from Bag Buff)",
     "materials": [
       "Joann's ripstop nylon",
       "Laundry bag mesh"
     ],
     "pictures": [
       "mtnFlyer"
+    ]
+  },
+  {
+    "name": "Mountain Flyer UL",
+    "desc": "Pattern from Bag Buff - no hipbelt or frame",
+    "materials": [
+      "Joann's ripstop nylon",
+      "Laundry bag mesh"
+    ],
+    "pictures": [
+      "MtnFlyerUl",
+      "MtnFlyerUl2"
+    ]
+  },
+  {
+    "name": "RayWay backpack",
+    "desc": "Kit from Ray Jardine",
+    "materials": [
+      "Not specified"
+    ],
+    "pictures": [
+      "rayway",
+      "raywaySide"
     ]
   },
   {
@@ -24,10 +47,23 @@
   },
   {
     "name": "Windshirt",
-    "desc": "Green Pepper pattern 134",
+    "desc": "Green Pepper pattern 134 - picture is a WIP",
     "materials": [
       "1.0oz HyperD",
       "Velcro"
+    ],
+    "pictures": [
+      "windshirtWIP"
+    ]
+  },
+  {
+    "name": "Wind mitts",
+    "desc": "",
+    "materials": [
+      "1.0oz HyperD"
+    ],
+    "pictures": [
+      "windmitts"
     ]
   },
   {
@@ -38,7 +74,23 @@
       "Zing-it"
     ],
     "pictures": [
-      "tarp"
+      "tarp",
+      "tarpWithNet",
+      "tarpDiamond",
+      "tarpSide"
+    ]
+  },
+  {
+    "name": "Flat Tarp 5'x7'",
+    "desc": "",
+    "materials": [
+      "1.1oz silpoly",
+      "Zing-it"
+    ],
+    "pictures": [
+      "GreenTarp",
+      "GreenTarpSnow2",
+      "GreenTarpSnow"
     ]
   },
   {
@@ -54,6 +106,17 @@
     ]
   },
   {
+    "name": "Mesh Mansion",
+    "desc": "Modified Net Tent to include more head/living space",
+    "materials": [
+      "1.1oz silpoly",
+      "0.67oz noseeum mesh"
+    ],
+    "pictures": [
+      "meshMansion"
+    ]
+  },
+  {
     "name": "Bug Bivy",
     "desc": "Waterproof floor; chest to side zip",
     "materials": [
@@ -66,14 +129,23 @@
     ]
   },
   {
-    "name": "RayWay backpack",
-    "desc": "Kit from Ray Jardine",
+    "name": "Pillow",
+    "desc": "comfortable, stuffed pillow",
     "materials": [
-      "Not specified"
+      "HyperD"
     ],
     "pictures": [
-      "rayway",
-      "raywaySide"
+      "pillow"
+    ]
+  },
+  {
+    "name": "Wallet",
+    "desc": "holds only what I need",
+    "materials": [
+      "DCF"
+    ],
+    "pictures": [
+      "wallet"
     ]
   }
 ]
