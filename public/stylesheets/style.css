@@ -27,9 +27,15 @@ a {
 .flex-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .cats-flex-child {
   flex: flex-grow;
   flex-grow: 1;
+}
+
+.narrow-body {
+  max-width: 1300px;
+  margin: auto;
 }
