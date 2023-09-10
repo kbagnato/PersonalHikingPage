@@ -38,7 +38,12 @@ block content
     //- if (loading), 'loading'
     //- if (gearlist.length = 0), 'nothing found'
     //- for (item in gearlist from gear.js)
-
+    //-   .card
+    //-     img.card-img-top(src='/images/gear/' + item.name + '.jpg' alt="Image coming soon")
+    //-     .card-body
+    //-       h5.card-title item.name
+    //-       h6.card-subtitle.text-muted item.desc
+    
 
     p Not listed above:
     ul
@@ -46,27 +51,5 @@ block content
       li Stuff sacks
       li Bottle and pot insulators
       li Puffy balaclava
-
-    //- DEPRECATED by .bagadonuts-cards
-    //- //- list each item in db
-    //- each item in gear
-    //-     hr
-    //-     h1 #{item.name}
-
-    //-     //- render pictures if included
-    //-     if item.pictures
-    //-       each pic in item.pictures
-    //-         .row 
-    //-           .col-md-4 
-    //-             .thumbnail 
-    //-               img.img.img-fluid(src=`/images/gear/${pic}.jpg` width='100%')
-    //-               br
-    //-               br
-        
-    //-     //- render material list
-    //-     p Materials: 
-    //-     ul
-    //-       each mat in item.materials
-    //-         li #{mat}
-
+      
     script(src='javascripts/bagadonuts.js')
