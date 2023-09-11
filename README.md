@@ -16,10 +16,16 @@ Last updated September 2023.
 *Client-side*
 - Add 'loading tracks...' to Cats35 map
 - ~~Implement AJAX call to get one geojson of all cats 35 tracks combined~~
-- 
 - Make Bagadonuts Gear page emulate an online shopping site
+- Convert home page carousel to Bootstrap
+- Make Cat Peaks clickable, that adds a point/centers the map on that peak
+- Add pagination to Astro page
+- Make site mobile-friendly with media queries
+- Add React to Baganouts page
   
 *Server-side*
 - ~~Complete 'combineCatTracks() in geojsonHelper~~
 - ~~ Create API for sending geojson of combined Cats tracks ~~
 - Move local 'databases' to true db (Catskills peaks/tracks, Bagadonuts gear, images, etc)
+- Move Astro content delivery to API
+  - Implement pagination
