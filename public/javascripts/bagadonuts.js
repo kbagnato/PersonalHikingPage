@@ -40,3 +40,13 @@ function populateList(list) {
     $('.bagadonuts-cards').append(gearCard);
   }
 }
+
+/* manually set image from thumbnails */
+function setActivePic(index) {
+  let thumbnails = $('.carousel-item');
+  for (let i = 0; i < thumbnails.length; i++) {
+    $('.carousel-item')[i].classList.remove('active')
+  }
+
+  $('.carousel-item')[index].classList.add('active')
+}

@@ -8,8 +8,20 @@ block content
       .row
         //- carousel
         .col
-          img.card-img-top(src='/images/gear/' + gear[id].pictures[0] + '.jpg' alt="Image coming soon")
-    
+          #gearCarousel.carousel.slide
+            .carousel-inner 
+              .carousel-item.active 
+                img.card-img-top(src='/images/gear/' + gear[id].pictures[0] + '.jpg' alt="Image coming soon")
+              .carousel-item 
+                img.card-img-top(src='/images/gear/' + gear[id].pictures[1] + '.jpg' alt="Image coming soon")
+              .carousel-item
+                img.card-img-top(src='/images/gear/' + gear[id].pictures[2] + '.jpg' alt="Image coming soon")
+            
+          //- thumbnails
+          .gear-thumbnails.container-fluid
+            each picName, idx in gear[id].pictures 
+              img.img-thumbnail(src='/images/gear/' + picName + '.jpg' alt="Image coming soon" onclick=`setActivePic(${idx})`)
+
         .col
           //- desc
           h4 Description
