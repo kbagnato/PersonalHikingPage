@@ -4,9 +4,35 @@ block content
   .narrow-body
     h1.text-center #{gear[id].name}
     
-    img.card-img-top(src='/images/gear/' + gear[id].pictures[0] + '.jpg' alt="Image coming soon")
+    .container
+      .row
+        //- carousel
+        .col
+          img.card-img-top(src='/images/gear/' + gear[id].pictures[0] + '.jpg' alt="Image coming soon")
     
-  
+        .col
+          //- desc
+          h4 Description
+          if gear[id].desc
+            p #{gear[id].desc}
+          else
+            i No description listed.
+
+          //- materials
+          h4 Materials
+          if gear[id].materials
+            ul
+            each mat in gear[id].materials
+              li #{mat}
+          else
+            i No materials listed.
+          
+          //- weight
+          h4 Weight
+          if gear[id].weight
+            p #{gear[id].weight} oz
+          else 
+            i No weight listed.
 
       
     script(src='..//javascripts/bagadonuts.js')

@@ -9,7 +9,8 @@
     ],
     "pictures": [
       "mtnFlyer"
-    ]
+    ],
+    "weight": 17
   },
   {
     "id": "1",
@@ -22,7 +23,8 @@
     "pictures": [
       "MtnFlyerUl",
       "MtnFlyerUl2"
-    ]
+    ],
+    "weight": 7.1
   },
   {
     "id": "2",
@@ -34,7 +36,8 @@
     "pictures": [
       "rayway",
       "raywaySide"
-    ]
+    ],
+    "weight": 9
   },
   {
     "id": "3",
@@ -59,7 +62,8 @@
     ],
     "pictures": [
       "windshirtWip"
-    ]
+    ],
+    "weight": 4.2
   },
   {
     "id": "5",
@@ -70,7 +74,8 @@
     ],
     "pictures": [
       "Windmitts"
-    ]
+    ],
+    "weight": 0.4
   },
   {
     "id": "6",
@@ -85,7 +90,8 @@
       "tarpWithNet",
       "tarpDiamond",
       "tarpSide"
-    ]
+    ],
+    "weight": 10.9
   },
   {
     "id": "7",
@@ -99,7 +105,8 @@
       "GreenTarp",
       "GreenTarpSnow2",
       "GreenTarpSnow"
-    ]
+    ],
+    "weight": 10.8
   },
   {
     "id": "8",
@@ -159,6 +166,7 @@
     ],
     "pictures": [
       "wallet"
-    ]
+    ],
+    "weight": 0.2
   }
 ]
