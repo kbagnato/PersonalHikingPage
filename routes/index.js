@@ -22,6 +22,15 @@ router.get('/gear', function(req, res, next) {
   res.render('gear', { title: TITLE, gear: gearList });
 });
 
+/* GET individual gear page. */
+router.get('/gear/:id', function(req, res, next) {
+  // TODO when connected to db, just get/send one record
+  console.log(req.params.id);
+  var gearFile = fs.readFileSync('public/gearList.json');
+  var gearList = JSON.parse(gearFile);
+  res.render('gearItem', { title: TITLE, gear: gearList, id: req.params.id });
+});
+
 /* GET cats 35 attempt page. */
 router.get('/cats35', function(req, res, next) {
   // include list of high peaks
