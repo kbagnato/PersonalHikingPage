@@ -1,5 +1,6 @@
 [
   {
+    "id": "0",
     "name": "Mountain Flyer",
     "desc": "Hipbelted, padded pack (pattern from Bag Buff)",
     "materials": [
@@ -11,6 +12,7 @@
     ]
   },
   {
+    "id": "1",
     "name": "Mountain Flyer UL",
     "desc": "Pattern from Bag Buff - no hipbelt or frame",
     "materials": [
@@ -23,6 +25,7 @@
     ]
   },
   {
+    "id": "2",
     "name": "RayWay backpack",
     "desc": "Kit from Ray Jardine",
     "materials": [
@@ -34,6 +37,7 @@
     ]
   },
   {
+    "id": "3",
     "name": "Bike Bag",
     "desc": "Frame bag",
     "materials": [
@@ -46,6 +50,7 @@
     ]
   },
   {
+    "id": "4",
     "name": "Windshirt",
     "desc": "Green Pepper pattern 134 - picture is a WIP",
     "materials": [
@@ -57,6 +62,7 @@
     ]
   },
   {
+    "id": "5",
     "name": "Wind mitts",
     "desc": "",
     "materials": [
@@ -67,6 +73,7 @@
     ]
   },
   {
+    "id": "6",
     "name": "Flat Tarp 7'x9'",
     "desc": "",
     "materials": [
@@ -81,6 +88,7 @@
     ]
   },
   {
+    "id": "7",
     "name": "Flat Tarp 5'x7'",
     "desc": "",
     "materials": [
@@ -94,6 +102,7 @@
     ]
   },
   {
+    "id": "8",
     "name": "Net Tent",
     "desc": "Fully enclosed; Waterproof 4\" bathtub floor; Center and size zips",
     "materials": [
@@ -106,6 +115,7 @@
     ]
   },
   {
+    "id": "9",
     "name": "Mesh Mansion",
     "desc": "Modified Net Tent to include more head/living space",
     "materials": [
@@ -117,6 +127,7 @@
     ]
   },
   {
+    "id": "10",
     "name": "Bug Bivy",
     "desc": "Waterproof floor; chest to side zip",
     "materials": [
@@ -129,6 +140,7 @@
     ]
   },
   {
+    "id": "11",
     "name": "Pillow",
     "desc": "comfortable, stuffed pillow",
     "materials": [
@@ -139,6 +151,7 @@
     ]
   },
   {
+    "id": "12",
     "name": "Wallet",
     "desc": "holds only what I need",
     "materials": [
