@@ -10,14 +10,14 @@ block content
     //- TODO move this Sort/Filter Contents to its own component
     hr
     form
-      .form-row
+      .row
         .col 
           label(for='inputFilter') Filter by:
-          select.form-control#inputFilter
+          select.form-select.form-control#inputFilter
             //- TODO move to db
             option All Products
-            option Shelters
             option Bags
+            option Shelters
             option Clothes
             option Misc
 
