@@ -59,3 +59,12 @@ a {
   left: 0;
   z-index: 1;
 }
+
+.gear-thumbnails img{
+  width: 8em;
+  height: 8em;
+}
+
+.carousel-inner {
+  max-height: 500px;
+}
