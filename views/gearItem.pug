@@ -10,9 +10,9 @@ block content
         .col
           #gearCarousel.carousel.slide
             .carousel-inner 
-              .carousel-item.active 
-                img.card-img-top(src='/images/gear/' + gear[id].pictures[0] + '.jpg' alt="Image coming soon")
-              .carousel-item 
+              each pic, idx in gear[id].pictures
+                .carousel-item
+                  img.card-img-top(src='/images/gear/' + pic + '.jpg' alt="Image coming soon")
                 img.card-img-top(src='/images/gear/' + gear[id].pictures[1] + '.jpg' alt="Image coming soon")
               .carousel-item
                 img.card-img-top(src='/images/gear/' + gear[id].pictures[2] + '.jpg' alt="Image coming soon")
@@ -45,6 +45,12 @@ block content
             p #{gear[id].weight} oz
           else 
             i No weight listed.
+
+      //- thumbnails
+      .row
+        .gear-thumbnails.container-fluid
+          each picName, idx in gear[id].pictures 
+            img.img-thumbnail(src='/images/gear/' + picName + '.jpg' alt="Image coming soon" onclick=`setActivePic(${idx})`)
 
       
     script(src='..//javascripts/bagadonuts.js')

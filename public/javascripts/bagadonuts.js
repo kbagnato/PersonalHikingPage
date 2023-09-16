@@ -2,6 +2,10 @@
 // var gearList = [];
 getGear();
 
+$('document').ready(function() {
+  $('.carousel-item')[0].classList.add('active')
+});
+
 /* get Bagadonuts gear list from server */
 function getGear() {
   $.ajax({
