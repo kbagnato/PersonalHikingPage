@@ -9,18 +9,19 @@ block content
         //- carousel
         .col
           #gearCarousel.carousel.slide
+            //- images
             .carousel-inner 
               each pic, idx in gear[id].pictures
                 .carousel-item
                   img.card-img-top(src='/images/gear/' + pic + '.jpg' alt="Image coming soon")
-                img.card-img-top(src='/images/gear/' + gear[id].pictures[1] + '.jpg' alt="Image coming soon")
-              .carousel-item
-                img.card-img-top(src='/images/gear/' + gear[id].pictures[2] + '.jpg' alt="Image coming soon")
-            
-          //- thumbnails
-          .gear-thumbnails.container-fluid
-            each picName, idx in gear[id].pictures 
-              img.img-thumbnail(src='/images/gear/' + picName + '.jpg' alt="Image coming soon" onclick=`setActivePic(${idx})`)
+
+            //- next/prev buttons
+            button.carousel-control-prev(type='button' data-bs-target='#gearCarousel' data-bs-slide='prev')
+              span.carousel-control-prev-icon(aria-hidden='true')
+              span.visually-hidden Previous
+            button.carousel-control-next(type='button' data-bs-target='#gearCarousel' data-bs-slide='next')
+              span.carousel-control-next-icon(aria-hidden='true')
+              span.visually-hidden Next
 
         .col
           //- desc
